@@ -43,3 +43,13 @@ h2, h3 {
 a {
     text-decoration: none;
 }
+
+.nav ul {
+    margin: 16px;
+    padding: 0;
+
+    list-style: none;
+}
+.nav ul li {
+    margin: 12px;
+}
