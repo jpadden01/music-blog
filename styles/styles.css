@@ -1,15 +1,33 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+:root {
+    --primary-color: #0A8754;
+    --secondary-color: #6A7FDB;
+    --background-color: #E2E2E2;
+    --footer-color: #d1d1d1;
+    --border-color: #5A5353;
+    --accent-color: #FAF2A1;
+}
 
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--background-color);
 }
 
 .header {
+    margin: 0;
+    border: 3px solid var(--border-color);
     padding: 24px;
+    
+    background-color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .container {
@@ -17,7 +35,11 @@ body {
     flex: 1;
 }
 .nav {
+    margin-right: 32px;
+    border: 1px solid var(--border-color);
     padding: 16px;
+
+    background-color: var(--secondary-color);
 }
 .content {
     padding: 16px;
@@ -28,6 +50,8 @@ body {
 
     display: flex;
     justify-content: center;
+
+    background-color: var(--footer-color);
 }
 
 h1 {
@@ -36,12 +60,14 @@ h1 {
 }
 h2, h3 {
     font-weight: 400;
+    color: var(--secondary-color);
 }
 .content p {
     margin-left: 0.5em;
 }
 a {
     text-decoration: none;
+    color: var(--accent-color)
 }
 .album-title {
     font-style: italic;
